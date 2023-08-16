@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: #FCFCFC;
+    font-family: 'Bricolage Grotesque',
+        sans-serif;
+
+
+}
+
+div {
+    display: flex;
+    margin: 30px auto;
+    width: 70vw;
+    max-width: 550px;
+    height: 80vh;
+    font-size: 2vw;
+    color: rgb(36, 43, 63);
+    text-shadow: 1px 1px white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    animation: blob-anime 2s infinite ease-in-out;
+    box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.02),
+        0px 5px 4px rgba(3, 7, 18, 0.03),
+        0px 12px 9px rgba(3, 7, 18, 0.05),
+        0px 20px 15px rgba(3, 7, 18, 0.06),
+        0px 32px 24px rgba(3, 7, 18, 0.08);
+}
+
+@keyframes blob-anime {
+    0% {
+        border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    }
+
+    50% {
+        border-radius: 50% 70% 67% 56% / 67% 70% 80% 50%;
+    }
+
+    100% {
+        border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    }
+}
