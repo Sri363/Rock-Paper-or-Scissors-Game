@@ -22,6 +22,7 @@ div {
     width: 70vw;
     max-width: 550px;
     height: 80vh;
+    max-height: 450px;
     font-size: 2vw;
     color: rgb(36, 43, 63);
     text-shadow: 1px 1px white;
