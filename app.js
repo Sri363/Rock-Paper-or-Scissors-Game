@@ -23,8 +23,11 @@ if (confirmation) {
             } else if (playerChoice === "rock" && computer === "paper") {
                 alert(`Computer choose ${computer} ,Computer wins!`);
             } else if (playerChoice === "paper" && computer === "scissors") {
-                alert(`Computer choose ${computer} ,You Wins!`);
-            } else {
+                alert(`Computer choose ${computer} ,Computer Wins!`);
+            } else if (playerChoice === "scissors" && computer === "rock") {
+                alert(`Computer choose ${computer} ,Computer Wins!`);
+            }
+            else {
                 alert(`Computer choose ${computer} ,You wins!`)
             }
         } else {
